@@ -1,0 +1,110 @@
+body {
+    margin: 0em;
+    font-family: 'Dosis', sans-serif;
+}
+
+.nav {
+    background-color:rgb(14, 2, 2);
+    color: lightgray;
+    top: 0em;
+    font-size: small;
+}
+
+.nav ul {
+    margin-left: 10%;
+    display: inline-block;
+    padding: 0em;
+}
+
+.nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 1em;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.contenido {
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+}
+.titulo {
+    background-color: lightgray;
+    font-size: 2em;
+    color: black;
+    border-radius: 0.5em;
+    left: 5em;
+    padding: 3em 3em 3em 1.5em;
+    width: 50%;
+    margin-top: 0.7em;
+}
+
+.titulo h3{
+    margin: 0em;
+    font-weight: bold;
+}
+
+.titulo p{
+    color: grey;
+    font-size: 0.5em;
+    top: 0em;
+    margin: 0em;
+    border: 0em;
+}
+
+.recuadros {
+    background-color: white;
+    color: black;
+    overflow-y: auto;
+    width: 85%;
+    top: 100px;
+}
+
+.cuadro {
+    padding: 1em;
+    box-shadow: 0.3em 0.3em 0.2em grey;
+    width: 10em;
+    height: auto;
+    display: inline-block;
+    border-radius: 0.3em solid black;
+    border: 0.1em solid black;
+    margin: 1.3em 1.3em 0em 0em;
+}
+
+.contenido section div h4 {
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.favoritos {
+    position: fixed;
+    right: 20%;
+    top: 2em;
+    margin: 1em;
+    border-collapse: collapse;
+}
+
+.favoritos h3{
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 0.2em;
+}
+
+.favoritos td{
+    border: 0.2em solid lightgray;
+    padding: 0.6em;
+    width: 10em;
+} 
+
+hr {
+    border-color: lightgray;
+    margin-top: 1.5em;
+}
+
+footer {
+    margin-left: 10%;
+    margin-top: 2.3em;
+    font-size: small;
+    margin-bottom: 2em;
+}

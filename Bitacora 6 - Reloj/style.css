@@ -1,0 +1,86 @@
+.container {
+    background-color: gray;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+}
+
+.reloj {
+    background-color: white;
+    z-index: 0;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 1em;
+}
+
+.container::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    background-color: gray;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.segundero {
+    background-color: red;
+    width: 80px;
+    height: 0.1em;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: left center;
+    animation-name: reloj;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.minutero {
+    background-color: black;
+    width: 75px;
+    height: 0.2em;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: left center;
+    animation-name: reloj;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hora {
+    background-color: black;
+    width: 57px;
+    height: 0.3em;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: reloj;
+    animation-duration: 216000s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: left center;
+}
+
+@keyframes reloj {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+

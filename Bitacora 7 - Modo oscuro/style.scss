@@ -1,0 +1,40 @@
+$backgrounColor:red;
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.imagen {
+    padding: 1em;
+}
+
+.titulo {
+    color: $backgrounColor;
+    font-size: 3em ;
+    font-weight: bolder;
+    padding-top: 1em;
+}
+
+.descripcion {  
+    text-align: justify;
+    padding: 1em;
+    margin: 0 15% 0 15%;
+}
+
+.formulario {
+    display: block;
+    padding: 1em;
+    margin: 0 15% 0 15%;
+    border: thin solid black;
+    border-radius: 0.3em;
+}
+
+.boton {
+    padding: 0.5em;
+}
+
+.cambiodemodo:checked ~ section {
+    background-color: darkgray;
+    color: white;
+  }

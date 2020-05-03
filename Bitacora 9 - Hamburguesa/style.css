@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    position: relative;
+    background-image: url("background.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+ul.nav-items {
+    height: 0;
+    overflow: hidden;
+}
+
+.bar {
+    background-color: rgb(64,137,151);
+    margin: 0;
+    height: max-content;
+    width: 100%;
+    padding: 0.4em;
+}
+
+.logo {
+    height: 2.5em;
+    width: 2.5em;
+    margin-left: 1em;
+}
+
+.nav-icon {
+    margin: 0em;
+    width: 40px;
+    position: absolute;
+    right: 3%;
+    top: 5px;
+  }
+  
+  .nav-icon:after, 
+  .nav-icon:before, 
+  .nav-icon div {
+    background-color: rgb(158, 55, 86);
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
+  }
+
+  .nav-icon:hover:before {
+    transform: translateY(12px) rotate(135deg);
+  }
+  
+  .nav-icon:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+  
+  .nav-icon:hover div {
+    transform: scale(0);
+  }

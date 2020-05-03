@@ -1,0 +1,28 @@
+
+body {
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 480px;
+}
+
+.banner {
+    border: 3px solid darkgray;
+}
+
+.titulo{
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    color: purple;
+    text-align: center;
+}
+
+.fecha {
+    font-family: 'Roboto Slab', serif, cursive;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.texto {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 21px;
+}

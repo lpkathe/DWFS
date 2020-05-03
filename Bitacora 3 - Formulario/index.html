@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACAMICA</title>
+    <style>
+        div {
+            padding-top: 5mm;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><b><i>APRENDE DIFERENTE</i></b></h1>
+    <nav>
+        <ul>
+            <li a href="#que-hacemos">Que hacemos</li>
+            <li a href="#mentores">Nuestros mentores</lia></li>
+            <li a href="#unirse">Únete a nosotros</li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2 id="que-hacemos">Que hacemos</h2>
+                <p>Inspiramos pasión por aprender, alentando a cada uno que forma parte de esta comunidad a encontrar su camino a través de la tecnología.</p>
+            </article>
+            <article>
+                <h2 id="#mentores">Nuestros mentores</h2>
+                <p>Además de profesionales expertos en la industria, buscamos personas capaces de despertar la curiosidad de nuestros estudiantes e incentivar la exploración.</p>
+            </article>
+            <article>
+                <h2 id="unirse">Únete a nosotros</h2>
+                <p>Forma parte de un reducido grupo de estudio, guiado por mentores profesionales y con el apoyo integral de tutores pedagógicos. Es desafiante aprender online si solo se trata de ti, pero es maravilloso si se trata de todos.</p>
+            </article>
+        </section>
+
+        <form action="https://www.htmlquick.com/es/form-result.php?" method="POST">
+            <header>
+                <h1><b>Formulario de Inscripción</b></h1>
+            </header>
+
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="ejemplo@mail.com" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" placeholder="(xxx) xxx-xxx-xxx" id="telefono">
+            </div>
+
+            <div>
+                <label for="carrera">¿A qué carrera deseas inscribirte?:</label>
+                <select name="carrera" id="carrera" size="1" required>
+                    <option value="" disabled selected>Seleccionar...</option>
+                    <option value="UX">UX/UI</option>
+                    <option value="DATA">Data science</option>
+                    <option value="DWFS">Desarrollo Web Full Stack</option>
+                    <option value="FrontEnd">FrontEnd Avanzado</option>
+                </select>
+            </div>
+
+            <div>
+                Modalidad
+                <label for="presencial">Presencial</label>
+                <input type="radio" name="modalidad" id="presencial" value="presencial" required>
+                <label for="online">On-line</label>
+                <input type="radio" name="modalidad" id="online" value="online" required>
+            </div>
+
+            <div>
+                ¿Estas trabajando actualmente?
+                <label for="si">Si</label>
+                <input type="radio" name="trabaja" id="si" value="si">
+                <label for="no">No</label>
+                <input type="radio" name="trabaja" id="no" value="no">
+            </div>
+
+            <div>
+                <label for="pais">Pais de procedencia:</label>
+                <select name="pais" id="pais" required>
+                    <option value="">Seleccionar...</option>
+                    <option value="COL">Colombia</option>
+                    <option value="OTRO">Otro</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="descripcion">Descripción personal: (máx. 300 caracteres)</label>
+            </div>
+            <textarea name="descripcion" id="descripcion" placeholder="soy una persona..." maxlength="300"></textarea>
+
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </div>
+        </form>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.cuadrado {
+    border: 3px solid blue;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(128, 128, 128, 0.596);
+}
+
+.cuadrado:hover {
+    transform: rotate(360deg);
+    background-color: burlywood;
+}
