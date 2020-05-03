@@ -1,15 +1,20 @@
-body {
-    margin: 0;
-    position: relative;
-    background-image: url("background.jpg");
-    background-size: 100vw;
-    background-repeat: no-repeat;
-}
 
-ul.nav-items {
-    height: 0;
-    overflow: hidden;
+body {
+  margin: 0;
+  position: relative;
+  background-image: url("background.jpg");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  font-family: 'Crimson Text', serif;;
 }
+li {
+  padding: 10px;
+  letter-spacing: 2px;
+}
+  
+a {
+    color: rgb(156, 79, 102);
+  }
 
 .bar {
     background-color: rgb(64,137,151);
@@ -24,6 +29,20 @@ ul.nav-items {
     width: 2.5em;
     margin-left: 1em;
 }
+
+.nav-items {
+  list-style: none;
+  text-align: center;
+  font-size: x-large;
+  color: rgb(209, 85, 85);
+  padding: 5px;
+  margin: 0;
+}
+
+li a:hover {
+  color: darkgrey;
+}
+/* INICIO MENU HAMBURGUESA */
 
 .nav-icon {
     margin: 0em;
@@ -45,6 +64,8 @@ ul.nav-items {
     transition: all .2s ease-in-out;
   }
 
+  /* ANIMACION MENU HAMBURGUESA */
+
   .nav-icon:hover:before {
     transform: translateY(12px) rotate(135deg);
   }
@@ -56,3 +77,5 @@ ul.nav-items {
   .nav-icon:hover div {
     transform: scale(0);
   }
+  /* FIN MENU HAMBURGUESA */
+
