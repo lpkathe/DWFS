@@ -9,17 +9,41 @@
 
     &_tittle {
         font-family: 'Indie Flower', cursive;
-        font-size: larger;
+        font-size: 2em;
         font-weight: bolder;
         color: rgb(107, 41, 134);
+        margin: 0;
     }
 
     &_boxes {
         width: 70%;
-        height: auto;
-        border-radius: 2em;
-        border: 1em solid black;
+        height: 30vh;
+        border-radius: 1em;
+        border: 0.5em solid black;
         background-color:rgb(107, 41, 134);
-
+        display: flex;
+        justify-content: space-around;
+        padding: 1em;
+        flex-wrap: wrap;
+    }
+    
+    &_box {
+        height: 4.5em;
+        flex-wrap: wrap;
+        width: 4.5em;
+        background-color: orange;
+        border: 0.2em solid black;
+        border-radius: 1em;
+    
+        &_3 {
+            align-self: flex-end;
+            flex-wrap: wrap;
+            height: 4.5em;
+            flex-wrap: wrap;
+            width: 6.5em;
+            background-color: orange;
+            border: 0.2em solid black;
+            border-radius: 1em;
+        }
     }
 }

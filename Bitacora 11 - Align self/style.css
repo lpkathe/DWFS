@@ -13,14 +13,42 @@
   margin-left: 20%; }
   .container_tittle {
     font-family: 'Indie Flower', cursive;
-    font-size: larger;
+    font-size: 2em;
     font-weight: bolder;
-    color: #6b2986; }
+    color: #6b2986;
+    margin: 0; }
   .container_boxes {
     width: 70%;
-    height: auto;
-    border-radius: 2em;
-    border: 1em solid black;
-    background-color: #6b2986; }
+    height: 30vh;
+    border-radius: 1em;
+    border: 0.5em solid black;
+    background-color: #6b2986;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 1em;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .container_box {
+    height: 4.5em;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 4.5em;
+    background-color: orange;
+    border: 0.2em solid black;
+    border-radius: 1em; }
+    .container_box_3 {
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      height: 4.5em;
+      flex-wrap: wrap;
+      width: 6.5em;
+      background-color: orange;
+      border: 0.2em solid black;
+      border-radius: 1em; }
 
 /*# sourceMappingURL=style.css.map */
