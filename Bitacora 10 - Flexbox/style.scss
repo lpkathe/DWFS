@@ -1,0 +1,23 @@
+@media (min-width: 800px) {
+    body {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      width: auto;
+      display: inline-block; }
+  
+    .box {
+      box-sizing: 400px;
+      display: inline-block; } }
+  body {
+    margin: 0; }
+  
+  .box {
+    height: 400px;
+    width: 400px;
+    box-sizing: border-box;
+    border: 10px solid lightcoral;
+    background-color: #f8c8b4; }
+  
+  /*# sourceMappingURL=style.css.map */
+  

@@ -1,0 +1,104 @@
+:root {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    background-image: url("https://storage.googleapis.com/afs-prod/media/afs:Medium:5511630073/1900.png");
+    height: 4em;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    
+    &_title {
+        font-weight: bold;
+        color: whitesmoke;
+    }
+    
+    &_logo {
+        width: 1em;
+        height: 4em;
+        margin: 0;
+        padding: 0;
+    }
+  }
+  
+  div{
+    display: flex; 
+    flex-flow: row wrap;
+    
+  & .section1{
+    border: 0.2em solid black;
+    border-right:0;
+    width: 15%;  
+    
+    & nav ul{
+      list-style: none; 
+    }
+    
+    & nav ul li{
+      padding: 1em; 
+    }
+  }
+  
+  & .section2{
+    width: 64%;
+    border: 0.2em solid black;
+  
+    & article{
+      padding: 1em; 
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      
+      & h2{
+        width: 50%; 
+      }
+      
+      & p{
+        width: 50%
+      }
+      
+      & picture img{
+      width: 80%; 
+    }
+    }
+  }
+    
+    & aside{
+      width: 20%; 
+      border: 0.2em solid black;
+      border-left: 0; 
+    }
+    
+  aside{
+    background: #CFE2FB; 
+    
+    & picture img{
+      padding-top: 1em; 
+      width:40%;
+      transform: rotate(-45deg);
+    }
+    
+    & article{
+        margin: 1em;
+        padding: 0.3em; 
+        border: 3px solid #c3c3c3;
+     }
+        & .article1{
+          background-color: #F7F241;   
+      }
+     & .article2{
+          background-color: #70DBF5;   
+      }
+     & .article3{
+          background-color: #C57DF4;   
+      }
+    }
+  }
