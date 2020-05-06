@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    background-color: white;
+
+    &_tittle {
+        font-family: 'Indie Flower', cursive;
+        font-size: larger;
+        font-weight: bolder;
+        color: rgb(107, 41, 134);
+    }
+}
