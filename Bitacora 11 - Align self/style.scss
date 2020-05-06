@@ -1,11 +1,25 @@
 .container {
     display: flex;
     background-color: white;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-top: 10%;
+    margin-left: 20%;
+
 
     &_tittle {
         font-family: 'Indie Flower', cursive;
         font-size: larger;
         font-weight: bolder;
         color: rgb(107, 41, 134);
+    }
+
+    &_boxes {
+        width: 70%;
+        height: auto;
+        border-radius: 2em;
+        border: 1em solid black;
+        background-color:rgb(107, 41, 134);
+
     }
 }

@@ -2,11 +2,25 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: white; }
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  margin-top: 10%;
+  margin-left: 20%; }
   .container_tittle {
     font-family: 'Indie Flower', cursive;
     font-size: larger;
     font-weight: bolder;
     color: #6b2986; }
+  .container_boxes {
+    width: 70%;
+    height: auto;
+    border-radius: 2em;
+    border: 1em solid black;
+    background-color: #6b2986; }
 
 /*# sourceMappingURL=style.css.map */
