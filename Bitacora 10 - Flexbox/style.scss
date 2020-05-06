@@ -1,23 +1,38 @@
-@media (min-width: 800px) {
+@media (max-width: 800px) {
     body {
       margin: 0;
       padding: 0;
       border: 0;
+    }
+    
+    .container {
       width: auto;
-      display: inline-block; }
-  
-    .box {
-      box-sizing: 400px;
-      display: inline-block; } }
+      display: flex;
+      flex-direction: column;
+      
+      &_box {
+        background-color: gray;
+      }
+    }
+  }  
+
   body {
-    margin: 0; }
+    margin: 0; 
+  }
   
-  .box {
-    height: 400px;
-    width: 400px;
-    box-sizing: border-box;
-    border: 10px solid lightcoral;
-    background-color: #f8c8b4; }
+  .container {
+    display: flex;
+    align-items: center;
+
+      &_box {
+        height: 400px;
+        width: 400px;
+        box-sizing: border-box;
+        border: 10px solid lightcoral;
+        background-color: #f8c8b4; 
+        flex-wrap: wrap;
+  }
+}
   
   /*# sourceMappingURL=style.css.map */
   
