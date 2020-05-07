@@ -1,6 +1,7 @@
 .nav-icon {
   margin: 0em;
   width: 40px;
+  cursor: pointer;
   top: 5px;
   z-index: 1; }
 

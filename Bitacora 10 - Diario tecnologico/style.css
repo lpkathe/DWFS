@@ -36,17 +36,32 @@ body {
     border-radius: 50px;
     background-color: white; }
 
+a {
+  color: #4e7de9;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease; }
+
+a:hover {
+  color: #8c9cc2; }
+
 .container_nav {
-  width: 0;
-  overflow: hidden;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  background-color: #000024;
+  top: 4em;
+  width: 300px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: fixed;
-  top: 4em; }
+  text-align: center;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
 
 .hamburguesa:checked ~ .container_nav {
-  width: 25%;
-  height: 100vh; }
+  -webkit-transform: none;
+          transform: none; }
 
 ul {
   list-style: none; }
