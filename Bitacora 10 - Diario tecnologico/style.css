@@ -19,6 +19,7 @@ body {
   height: 4em;
   width: 100vw;
   position: fixed;
+  padding: 0em 1em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -29,11 +30,11 @@ body {
     font-weight: bold;
     color: whitesmoke; }
   .header_logo {
-    margin: 0;
-    padding: 0; }
-
-.nav-icon {
-  margin-left: 1em; }
+    margin: 0 2em;
+    width: 3em;
+    height: 3em;
+    border-radius: 50px;
+    background-color: white; }
 
 .container_nav {
   width: 0;
@@ -41,7 +42,6 @@ body {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   position: fixed;
-  left: 0;
   top: 4em; }
 
 .hamburguesa:checked ~ .container_nav {

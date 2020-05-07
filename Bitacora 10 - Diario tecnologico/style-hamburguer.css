@@ -7,7 +7,7 @@
 .nav-icon:after,
 .nav-icon:before,
 .nav-icon div {
-  background-color: #9e3756;
+  background-color: white;
   border-radius: 3px;
   content: '';
   display: block;
