@@ -1,0 +1,37 @@
+.nav-icon {
+  margin: 0em;
+  width: 40px;
+  top: 5px;
+  z-index: 1; }
+
+.nav-icon:after,
+.nav-icon:before,
+.nav-icon div {
+  background-color: #9e3756;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: all .4s ease-in-out; }
+
+.hamburguesa:checked ~ header > .nav-icon:before {
+  transform: translateY(12px) rotate(135deg); 
+}
+
+.hamburguesa:checked ~ header > .nav-icon:after {
+  transform: translateY(-12px) rotate(-135deg); 
+}
+
+.hamburguesa:checked ~ header > .nav-icon div {
+  transform: scale(0); 
+}
+
+.hamburguesa {
+  z-index: 2;
+  margin: 0em;
+  width: 40px;
+  position: absolute;
+  top: 5px;
+  visibility: hidden; 
+}

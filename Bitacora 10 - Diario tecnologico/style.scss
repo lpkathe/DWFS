@@ -1,63 +1,64 @@
 :root {
-    font-family: 'Jost', sans-serif;
-    font-size: 16px;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex; 
 }
 
 .header {
-    display: flex;
-    background-image: url("https://storage.googleapis.com/afs-prod/media/afs:Medium:5511630073/1900.png");
-    height: 4em;
-    width: 100vw;
-    align-items: center;
-    justify-content: space-between;
-    
-    &_title {
-        font-weight: bold;
-        color: whitesmoke;
-    }
-    
-    &_logo {
-        width: 1em;
-        height: 4em;
-        margin: 0;
-        padding: 0;
-    }
-  }
+  display: flex;
+  background-image: url("https://storage.googleapis.com/afs-prod/media/afs:Medium:5511630073/1900.png");
+  height: 4em;
+  width: 100vw;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
   
-  .container {
-    display: flex; 
+  &_title {
+    font-weight: bold;
+    color: whitesmoke;
+  }
     
-  .section1 {
-    border: 0.2em solid black;
-    border-right:0;
-    width: 15%; 
-    max-width: 0;
-    overflow: hidden;
-    transition: all 1s ease 
-    
-    & nav ul{
-      list-style: none; 
-    }
-    
-    & nav ul li{
-      padding: 1em; 
-    }
+  &_logo {
+    margin: 0;
+    padding: 0;
+  }
+}
 
-    & picture{
-      display: flex;
-      justify-content: center;
-      & img {
-        width:50%;
-      }
-    }
-  }
-  
-  & .section2{
+.nav-icon {
+  margin-left: 1em;
+}
+
+.container_nav {
+  width: 0;
+  overflow: hidden;
+  transition: all 1s ease ;
+  position:fixed;
+  left: 0;
+  top: 4em;
+}
+
+.hamburguesa:checked ~ .container_nav {
+  width: 25%;
+  height: 100vh;
+}
+
+ul{
+  list-style: none; 
+}
+      
+ul li{
+  padding: 1em; 
+}
+  /*
+.articulos{
     width: 64%;
     border: 0.2em solid black;
   
@@ -66,7 +67,7 @@
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
-      
+    
       & h2{
         width: 50%; 
       }
@@ -79,38 +80,42 @@
       width: 80%; 
     }
     }
+}
+  
+aside{
+  width: 20%;
+  border: 0.2em solid black;
+  border-left: 0;
+  background: #CFE2FB;
+
+  & picture img{
+    padding-top: 1em;
+    width:40%;
+    transform: rotate(-45deg);
+  }
+
+  & article{
+    margin: 1em;
+    padding: 0.3em;
+    border: 3px solid #C3C3C3;
+    text-align: justify;
+    padding: 0.5em;
   }
   
-    aside{
-      width: 20%;
-      border: 0.2em solid black;
-      border-left: 0;
-      background: #CFE2FB;
+  & .article1{
+      background-color: #F7F241;
+  }
+  
+  & .article2{
+      background-color: #70DBF5;
+  }
+  
+  & .article3{
+      background-color: #C57DF4;
+  }
+}
 
-    & picture img{
-      padding-top: 1em;
-      width:40%;
-      transform: rotate(-45deg);
-    }
-    & article{
-        margin: 1em;
-        padding: 0.3em;
-        border: 3px solid #C3C3C3;
-        text-align: justify;
-        padding: 0.5em;
-     }
-        & .article1{
-          background-color: #F7F241;
-      }
-     & .article2{
-          background-color: #70DBF5;
-      }
-     & .article3{
-          background-color: #C57DF4;
-      }
-    }
-    .articulos
-    {
+    .articulos {
         display: flex;
         flex-direction: column;
         padding: 1rem;
@@ -120,48 +125,10 @@
         }
         & img
         {
-            height: auto;
-            width: 10rem;
+            height: 5em;
+            width: 5em;
             border-radius: 1rem 1rem 1rem 1rem;
         }
-    }    
-  }
+    } 
 
-  /* INICIO MENU HAMBURGUESA */
-  
-  .nav-icon {
-    margin: 0em;
-    width: 40px;
-    position: absolute;
-    left: 3%;
-    top: 5px;
-    z-index: 1;
-}
-
-.nav-icon:after, 
-.nav-icon:before, 
-.nav-icon div {
-  background-color: rgb(158, 55, 86);
-  border-radius: 3px;
-  content: '';
-  display: block;
-  height: 5px;
-  margin: 7px 0;
-  transition: all .4s ease-in-out;
-}
-
-/* ANIMACION MENU HAMBURGUESA */
-
-.nav-icon:hover:before {
-  transform: translateY(12px) rotate(135deg);
-}
-
-.nav-icon:hover:after {
-  transform: translateY(-12px) rotate(-135deg);
-}
-
-.nav-icon:hover div {
-  transform: scale(0);
-}
-
-/* FIN MENU HAMBURGUESA */
+*/

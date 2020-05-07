@@ -5,34 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-hamburguer.css">
   <link rel="stylesheet" href="style.css">
   <title>DIARIO TECNOLOGICO</title>
 </head>
 
 <body>
-  <header class="header">
-    <nav id="navigation">
-      <div class="nav-icon">
-          <div></div>
-      </div>
+  <main class="container">
+    <input type="checkbox" id="hamburguesa" class="hamburguesa">
+
+    <header class="header">
+      <label class="nav-icon" for="hamburguesa">
+        <div></div>
+      </label>
+
+      <h1 class="header_title">Technology Diary</h1>
+
+      <picture class="header_logo">
+        <img src="https://picsum.photos/100/64" alt="logo"></img>
+      </picture>
+
+    </header>  
+    
+    <nav class="container_nav">
+      <ul>
+        <li><a href="#article_notice1">Dark Mode In React</a></li>
+        <li><a href="#article_notice2">Exploring Node.js Internals</a></li>
+        <li><a href="#article_notice3">Responsive Web And Desktop Development With Flutter</a></li>
+        <li><a href="#article_notice4">Introducing Alpine.js: A Tiny JavaScript Framework</a></li>
+      </ul>
+      <picture> <img src=""> </picture>
     </nav>
-    <picture class="header_logo">
-      <img src="https://picsum.photos/100/64" alt="logo"></img>
-    </picture>
-    <h1 class="header_title">Technology Diary</h1>
-  </header>
-  <div class="container">
-    <section class="section1">
-      <nav>
-        <ul>
-          <li><a href="#article_notice1">Dark Mode In React</a></li>
-          <li><a href="#article_notice2">Exploring Node.js Internals</a></li>
-          <li><a href="#article_notice3">Responsive Web And Desktop Development With Flutter</a></li>
-          <li><a href="#article_notice4">Introducing Alpine.js: A Tiny JavaScript Framework</a></li>
-        </ul>
-        </nav>
-      <picture> <img src="https://flaticon.es/premium-icon/icons/svg/801/801293.svg"> </picture>
-    </section>
+
     <section class="articulos">
       <article id="notice1">
         <picture>
@@ -79,6 +83,7 @@
         <a href="https://www.smashingmagazine.com/2020/04/miraje-js-models-associations/">Read More</a>
       </article>
     </section>
+
     <aside id="aside_comments">
       <picture>
         <img src="https://image.flaticon.com/icons/svg/2811/2811088.svg">
@@ -108,5 +113,5 @@
           <p>06-May-2020</p>
         </article>
     </aside>
-  </div>
+  </main>
 </body>
