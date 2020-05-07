@@ -2,78 +2,111 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>DIARIO TECNOLOGICO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>DIARIO TECNOLOGICO</title>
 </head>
 
 <body>
-    <header class="header">
-      <picture class="header_logo">
-        <img src="https://picsum.photos/100/64" alt="logo"></img>
-      </picture>
-      <h1 class="header_title">Technology Diary</h1>
-    </header>
-      <div>
-        <section class="section1">
-              <nav>
-        <ul>
-          <li>Dark Mode In React</li>
-          <li>Item2</li>
-          <li>Item3</li>
-          <li>Item4</li>
-      </nav>
-        </section>
-        <section class="section2">
-          <article>
-             <picture>
-        <img src="https://www.arsys.es/blog/wp-content/uploads/2017/04/React.jpg"> 
-      </picture>
-            <h2>Implementing Dark Mode In React Apps Using styled-components</h2>
-            <p>Light mode is a convention in most web and mobile apps. However, in modern development, we have seen how dark mode, which displays light text and interface elements on a dark background, is quickly becoming a user preference. In this article, we’ll learn how to efficiently implement dark mode in a React app on a simple web page, using the styled-components library and leveraging some React features like hooks. We will also discuss the pros and cons of dark mode and why it should be adopted <a href = "https://www.smashingmagazine.com/2020/04/dark-mode-react-apps-styled-components/">Learn more</a></p>
-          </article>
-          <article>
-         <picture>
-        <img src=""> 
-      </picture>
-          <h2>TITLE</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, velit debitis. Tenetur alias sint voluptatum voluptates veniam ea, inventore ad reiciendis, quis, perferendis minima fuga numquam debitis? Recusandae, a assumenda!</p>
-          </article>
-          <article>
-     <picture>
-        <img src=""> 
-      </picture>
-            <h2>TITLE</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia enim beatae nostrum eos, veniam aspernatur. Nihil, perferendis odit! Nulla iure vero officiis eos illum magnam neque in voluptatibus quis architecto.</p>
-          </article>
-          <article>
-               <picture>
-        <img src=""> 
-      </picture>
-            <h2>TITLE</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia enim beatae nostrum eos, veniam aspernatur. Nihil, perferendis odit! Nulla iure vero officiis eos illum magnam neque in voluptatibus quis architecto.</p>
-          </article>
-        </section>
-        <aside>
-          <picture>
-            <img src="https://image.flaticon.com/icons/svg/2811/2811088.svg">
-          <article class="article1">
-            <h3>Diana Valencia:</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque assumenda deleniti aliquid dolorum. Rem autem consectetur distinctio eligendi voluptates? Animi quod a eius repellat non, unde nostrum minus! Doloribus.</p>
-            <p>Fecha</p>
-          </article>
-          <article class="article2">
-            <h3>Isacc Salazar</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod porro voluptas repudiandae, magni reprehenderit eligendi nobis explicabo culpa tempore corporis at quam delectus cumque deserunt unde officiis repellat, sequi esse!</p>
-            <p>Fecha</p>
-          </article>
-          <article class="article3">
-            <h3>Katherine Martinez</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto possimus doloremque voluptatem delectus cum, laborum sint eius omnis exercitationem laboriosam obcaecati dolorum, suscipit voluptates. Libero non sapiente ipsam esse natus?</p>
-            <p>Fecha</p>
-          </article>
-        </aside>
+  <header class="header">
+    <nav id="navigation">
+      <div class="nav-icon">
+          <div></div>
       </div>
-  </body>
+    </nav>
+    <picture class="header_logo">
+      <img src="https://picsum.photos/100/64" alt="logo"></img>
+    </picture>
+    <h1 class="header_title">Technology Diary</h1>
+  </header>
+  <div class="container">
+    <section class="section1">
+      <nav>
+        <ul>
+          <li><a href="#article_notice1">Dark Mode In React</a></li>
+          <li><a href="#article_notice2">Exploring Node.js Internals</a></li>
+          <li><a href="#article_notice3">Responsive Web And Desktop Development With Flutter</a></li>
+          <li><a href="#article_notice4">Introducing Alpine.js: A Tiny JavaScript Framework</a></li>
+        </ul>
+        </nav>
+      <picture> <img src="https://flaticon.es/premium-icon/icons/svg/801/801293.svg"> </picture>
+    </section>
+    <section class="articulos">
+      <article id="notice1">
+        <picture>
+          <img src="https://picsum.photos/150/150" alt="">
+        </picture>
+        <h2>An Introduction To React With Ionic</h2>
+        <p>Mobile app development using hybrid frameworks has come a long way since initial release in 2008. With the
+          improvements being made to the JavaScript engine and improved processing power available to mobile phones,
+          the major concern people had when they considered developing their apps using the hybrid approach — namely,
+          performance — has all but been eliminated, and cross-platform frameworks have seen a surge in popularity.
+          We're going to build a mobile application that pulls data from the Marvel Comics API; the data will show
+          Marvel comics and you'll be able to choose your favorites. At the end, we'll create a native build of the
+          project on Android.</p>
+        <a href="https://www.smashingmagazine.com/2020/05/introduction-react-ionic/">Read More</a>
+      </article>
+      <article id="notice2">
+        <picture>
+          <img src="https://picsum.photos/150/150" alt="">
+        </picture>
+        <h2>Readability Algorithms Should Be Tools, Not Targets</h2>
+        <p>Readability programs may seem like a godsend, but the worst thing writers can do is write to please them
+          above all others. Finding your voice is hard enough without also trying to sound like everyone else.</p>
+        <a href="https://www.smashingmagazine.com/2020/05/readability-algorithms-tools-targets/">Read More</a>
+      </article>
+      <article id="notice3">
+        <picture>
+          <img src="https://picsum.photos/150/150" alt="">
+        </picture>
+        <h2>Join Our New Online Workshops On CSS, Accessibility, Performance, And UX</h2>
+        <p>Our initial online workshops went so well, we have scheduled many more. Find out how what we learned from
+          those first workshops and what we have coming up over the next two months.</p>
+        <a
+          href="https://www.smashingmagazine.com/2020/04/new-smashing-online-workshops-css-accessibility-performance-ux/">Read
+          More</a>
+      </article>
+      <article id="notice4">
+        <picture>
+          <img src="https://picsum.photos/150/150" alt="">
+        </picture>
+        <h2>Mirage JS Deep Dive: Understanding Mirage JS Models And Associations (Part 1)</h2>
+        <p>In this first part of the Mirage JS Deep Dive series, we will be looking at Mirage JS models and
+          associations. We'll take a closer look at what they are and the roles they play in crafting out
+          production-ready frontend without an actual backend with Mirage JS.</p>
+        <a href="https://www.smashingmagazine.com/2020/04/miraje-js-models-associations/">Read More</a>
+      </article>
+    </section>
+    <aside id="aside_comments">
+      <picture>
+        <img src="https://image.flaticon.com/icons/svg/2811/2811088.svg">
+        <article class="article1">
+          <h3>Diana Valencia:</h3>
+          <p>In light mode, all font colors are black and background is white. But what if some section of page has
+            font color white and background color (or some other color scheme ) is black in light mode . And this is
+            defined in css file. Then how can I do this?.</p>
+          <p>04-May-2020</p>
+        </article>
+        <article class="article2">
+          <h3>Isacc Salazar</h3>
+          <p>If you're comparing this to svelte, I think you missed a lot of the point:
+            <li>no build step</li>
+            <li>minimal</li>
+            <br>
+            Svelte's whole point of of existence, stripping everything that does not provide any value at build time,
+            would necessarily require a build step.
+          </p>
+          <p>05-May-2020</p>
+        </article>
+        <article class="article3">
+          <h3>Katherine Martinez</h3>
+          <p>In light mode, all font colors are black and background is white. But what if some section of page has
+            font color white and background color (or some other color scheme ) is black in light mode . And this is
+            defined in css file. Then how can I do this?</p>
+          <p>06-May-2020</p>
+        </article>
+    </aside>
+  </div>
+</body>

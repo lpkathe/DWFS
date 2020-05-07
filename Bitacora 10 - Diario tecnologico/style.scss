@@ -29,14 +29,16 @@
     }
   }
   
-  div{
+  .container {
     display: flex; 
-    flex-flow: row wrap;
     
-  & .section1{
+  .section1 {
     border: 0.2em solid black;
     border-right:0;
-    width: 15%;  
+    width: 15%; 
+    max-width: 0;
+    overflow: hidden;
+    transition: all 1s ease 
     
     & nav ul{
       list-style: none; 
@@ -44,6 +46,14 @@
     
     & nav ul li{
       padding: 1em; 
+    }
+
+    & picture{
+      display: flex;
+      justify-content: center;
+      & img {
+        width:50%;
+      }
     }
   }
   
@@ -70,35 +80,88 @@
     }
     }
   }
-    
-    & aside{
-      width: 20%; 
+  
+    aside{
+      width: 20%;
       border: 0.2em solid black;
-      border-left: 0; 
-    }
-    
-  aside{
-    background: #CFE2FB; 
-    
+      border-left: 0;
+      background: #CFE2FB;
+
     & picture img{
-      padding-top: 1em; 
+      padding-top: 1em;
       width:40%;
       transform: rotate(-45deg);
     }
-    
     & article{
         margin: 1em;
-        padding: 0.3em; 
-        border: 3px solid #c3c3c3;
+        padding: 0.3em;
+        border: 3px solid #C3C3C3;
+        text-align: justify;
+        padding: 0.5em;
      }
         & .article1{
-          background-color: #F7F241;   
+          background-color: #F7F241;
       }
      & .article2{
-          background-color: #70DBF5;   
+          background-color: #70DBF5;
       }
      & .article3{
-          background-color: #C57DF4;   
+          background-color: #C57DF4;
       }
     }
+    .articulos
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        & article
+        {
+            margin: 1rem;
+        }
+        & img
+        {
+            height: auto;
+            width: 10rem;
+            border-radius: 1rem 1rem 1rem 1rem;
+        }
+    }    
   }
+
+  /* INICIO MENU HAMBURGUESA */
+  
+  .nav-icon {
+    margin: 0em;
+    width: 40px;
+    position: absolute;
+    left: 3%;
+    top: 5px;
+    z-index: 1;
+}
+
+.nav-icon:after, 
+.nav-icon:before, 
+.nav-icon div {
+  background-color: rgb(158, 55, 86);
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: all .4s ease-in-out;
+}
+
+/* ANIMACION MENU HAMBURGUESA */
+
+.nav-icon:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.nav-icon:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.nav-icon:hover div {
+  transform: scale(0);
+}
+
+/* FIN MENU HAMBURGUESA */

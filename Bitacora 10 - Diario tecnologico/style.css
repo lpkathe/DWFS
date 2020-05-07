@@ -28,26 +28,34 @@ body {
     margin: 0;
     padding: 0; }
 
-div {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap; }
-  div .section1 {
+  display: flex; }
+  .container .section1 {
     border: 0.2em solid black;
     border-right: 0;
-    width: 15%; }
-    div .section1 nav ul {
-      list-style: none; }
-    div .section1 nav ul li {
+    width: 15%;
+    max-width: 0;
+    overflow: hidden;
+    -webkit-transition: all 1s ease .container .section1 nav ul;
+    transition: all 1s ease .container .section1 nav ul;
+      transition-list-style: none; }
+    .container .section1 nav ul li {
       padding: 1em; }
-  div .section2 {
+    .container .section1 picture {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .container .section1 picture img {
+        width: 50%; }
+  .container .section2 {
     width: 64%;
     border: 0.2em solid black; }
-    div .section2 article {
+    .container .section2 article {
       padding: 1em;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -59,32 +67,84 @@ div {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      div .section2 article h2 {
+      .container .section2 article h2 {
         width: 50%; }
-      div .section2 article p {
+      .container .section2 article p {
         width: 50%; }
-      div .section2 article picture img {
+      .container .section2 article picture img {
         width: 80%; }
-  div aside {
+  .container aside {
     width: 20%;
     border: 0.2em solid black;
-    border-left: 0; }
-  div aside {
+    border-left: 0;
     background: #CFE2FB; }
-    div aside picture img {
+    .container aside picture img {
       padding-top: 1em;
       width: 40%;
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg); }
-    div aside article {
+    .container aside article {
       margin: 1em;
       padding: 0.3em;
-      border: 3px solid #c3c3c3; }
-    div aside .article1 {
+      border: 3px solid #C3C3C3;
+      text-align: justify;
+      padding: 0.5em; }
+    .container aside .article1 {
       background-color: #F7F241; }
-    div aside .article2 {
+    .container aside .article2 {
       background-color: #70DBF5; }
-    div aside .article3 {
+    .container aside .article3 {
       background-color: #C57DF4; }
+  .container .articulos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem; }
+    .container .articulos article {
+      margin: 1rem; }
+    .container .articulos img {
+      height: auto;
+      width: 10rem;
+      border-radius: 1rem 1rem 1rem 1rem; }
+
+/* INICIO MENU HAMBURGUESA */
+.nav-icon {
+  margin: 0em;
+  width: 40px;
+  position: absolute;
+  left: 3%;
+  top: 5px;
+  z-index: 1; }
+
+.nav-icon:after,
+.nav-icon:before,
+.nav-icon div {
+  background-color: #9e3756;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+
+/* ANIMACION MENU HAMBURGUESA */
+.nav-icon:hover:before {
+  -webkit-transform: translateY(12px) rotate(135deg);
+          transform: translateY(12px) rotate(135deg); }
+
+.nav-icon:hover:after {
+  -webkit-transform: translateY(-12px) rotate(-135deg);
+          transform: translateY(-12px) rotate(-135deg); }
+
+.nav-icon:hover div {
+  -webkit-transform: scale(0);
+          transform: scale(0); }
+
+/* FIN MENU HAMBURGUESA */
 
 /*# sourceMappingURL=style.css.map */
