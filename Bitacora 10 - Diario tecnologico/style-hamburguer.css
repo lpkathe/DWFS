@@ -1,13 +1,14 @@
 .nav-icon {
   margin: 0em;
   width: 40px;
+  cursor: pointer;
   top: 5px;
-  z-index: 1; }
+  z-index: 2; }
 
 .nav-icon:after,
 .nav-icon:before,
 .nav-icon div {
-  background-color: #9e3756;
+  background-color: white;
   border-radius: 3px;
   content: '';
   display: block;
