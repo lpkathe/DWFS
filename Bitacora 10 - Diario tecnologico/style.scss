@@ -75,35 +75,37 @@ body {
 }
 
 .articles {
-  margin-top: 4em;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+}
 
-  &_article {
-    padding: 1em; 
-    flex-direction: row;
-    flex-wrap: wrap;
+.article {
+  display: flex;
+  padding: 1em; 
+  align-items: center;
+  flex-grow: 1;
   
-    &_titlle {
+    &_img {
+      height: fit-content; 
+    }
+
+    &_tittle {
       width: 50%; 
+      font-weight: bold;
+      text-align: center;
     }
     
     &_texto {
       width: 50%
     }
     
-    &_img {
-    width: 80%; 
-  }
-  }
 }
-  /*
-.articulos{
-    width: 64%;
-    border: 0.2em solid black;
+.aside{
+  width: 15%;
+  border: 0.2em solid black;
   
+  /*
     & article{
       padding: 1em; 
       display: flex;
@@ -171,6 +173,5 @@ aside{
             width: 5em;
             border-radius: 1rem 1rem 1rem 1rem;
         }
-    } 
-
-*/
+    }
+*/}
