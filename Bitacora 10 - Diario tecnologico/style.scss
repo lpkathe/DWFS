@@ -172,3 +172,41 @@ aside{
  .footer {
    margin-left: 1em;
  }
+
+ .section_buscar {
+  grid-area: buscar;
+}
+
+.div_buscar{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-areas: "buscar";
+  white-space: nowrap;
+}
+
+#buscar{
+  margin: 20px;
+  padding-left: 30px;
+  width: 400px;
+  height: 40px;
+  font-family: Verdana;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  background: #2b303b;
+  border: none;  
+}
+
+#buscar:focus{
+  background: white;
+  border: 3px solid rgb(134, 200, 233);
+  transition: all 0.5s ease;
+}
+
+.icon{
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 26px;
+  z-index: 1;
+  color: #76808a;
+}
