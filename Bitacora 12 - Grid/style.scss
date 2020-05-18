@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+    grid-template-columns: 20vw auto;
+    grid-template-rows: 10vh auto 10vh;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+    height: 97vh;
+    border: 3px solid black;
+}
+
+header {
+    text-align: center;
+    border: 3px solid black;
+    grid-area: header;
+}
+
+aside {
+    text-align: center;
+    border: 3px solid black;
+    grid-area: aside;
+}
+
+main {
+    text-align: center;
+    border: 3px solid black;
+    grid-area: main;
+}
+
+footer {
+    text-align: center;
+    border: 3px solid black;
+    grid-area: footer;
+}
