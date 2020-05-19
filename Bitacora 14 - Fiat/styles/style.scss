@@ -1,0 +1,28 @@
+*
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .header
+        {
+            display: flex;
+            justify-content: space-around;
+            width: 90vw;
+            height: 15vh;
+            background-color: white;
+            color: black;
+            opacity: 0.9;
+            border-top: 0.3rem solid #9D2424;
+            padding: 0.5rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .header_logo
+        {
+            width: 7rem;
+            height: auto;
+        }
+        .header_menu
+        {
+            margin: 0;
+            padding: 0;
+            display }
