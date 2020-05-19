@@ -1,0 +1,12 @@
+body {
+  background-image: url("header-background.jpg"); }
+
+.nav-link {
+  color: #2eccd1;
+  font-weight: bolder;
+  font-size: larger; }
+
+.btn {
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
