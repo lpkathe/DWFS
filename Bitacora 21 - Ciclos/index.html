@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="<link href=" https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap"
         rel="stylesheet">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -19,13 +18,19 @@
         <section class="container">
             <article class="container__for">
                 <h2 class="container__for__title">Ciclo <span>"FOR"</span></h2>
-                <span id="f"></span>
+                <span onclick="f()"><h3 class="container__for__h3">Click aquí para generar una secuencia de 10</h3></span>
+                    <ul class="container__for__ul" id="myListFor">
+                    </ul>
             </article>
             <article class="container__while">
                 <h2 class="container__while__title">Ciclo <span>"WHILE"</span></h2>
+                <span onclick="w()"><h3 class="container__while__h3">Click aquí para generar una secuencia de 10</h3></span>
+                <ul class="container__while__ul" id="myListWhile">
+                </ul>
             </article>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

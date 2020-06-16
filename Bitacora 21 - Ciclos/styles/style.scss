@@ -29,33 +29,53 @@ main {
     color: rgb(171, 36, 77);
 
         &__for {
-            height: auto;
             width: 50vw;
+            display: flex;
             flex-direction: column;
             border-right: 0.1em solid  rgb(238, 118, 72);
+            align-items: center;
 
             &__title {
                 text-align: center;
+            }
 
                 & span {
                     color: rgb(86, 22, 96);
+            }
 
-                }
+            &__h3 {
+                width: 8em;
+                text-align: center;
+                border: 0.1em solid orangered;
+            }
+
+            &__ul {
+                padding: 0;
             }
         }
 
         &__while {
-            height: auto;
             width: 50vw;
+            display: flex;
             flex-direction: column;
+            align-items: center;
 
             &__title {
                 text-align: center;
+            }
 
                 & span {
                     color: rgb(86, 22, 96);
+            }
 
-                }
+            &__h3 {
+                width: 8em;
+                text-align: center;
+                border: 0.1em solid orangered;
+            }
+
+            &__ul {
+                padding: 0;
             }
         }
 }

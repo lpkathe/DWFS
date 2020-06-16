@@ -32,27 +32,49 @@ main {
   font-size: 12px;
   color: #ab244d; }
   .container__for {
-    height: auto;
     width: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    border-right: 0.1em solid #ee7648; }
+    border-right: 0.1em solid #ee7648;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .container__for__title {
       text-align: center; }
-      .container__for__title span {
-        color: #561660; }
+    .container__for span {
+      color: #561660; }
+    .container__for__h3 {
+      width: 8em;
+      text-align: center;
+      border: 0.1em solid orangered; }
+    .container__for__ul {
+      padding: 0; }
   .container__while {
-    height: auto;
     width: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .container__while__title {
       text-align: center; }
-      .container__while__title span {
-        color: #561660; }
+    .container__while span {
+      color: #561660; }
+    .container__while__h3 {
+      width: 8em;
+      text-align: center;
+      border: 0.1em solid orangered; }
+    .container__while__ul {
+      padding: 0; }
 
 /*# sourceMappingURL=style.css.map */
