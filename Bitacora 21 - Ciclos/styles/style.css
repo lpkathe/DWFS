@@ -1,10 +1,12 @@
 :root {
-  font-family: 'MuseoModerno', cursive; }
+  font-family: 'MuseoModerno', cursive;
+  font-size: 14px; }
 
 body {
   margin: 0; }
 
 main {
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,7 +16,8 @@ main {
           flex-direction: column; }
 
 .header {
-  background-color: #436166;
+  color: #f9eeb1;
+  background-color: #ee7648;
   text-align: center; }
 
 .container {
@@ -23,7 +26,11 @@ main {
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 12px;
+  color: #ab244d; }
   .container__for {
     height: auto;
     width: 50vw;
@@ -31,7 +38,11 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    border-radius: 1em solid #436166; }
+    border-right: 0.1em solid #ee7648; }
+    .container__for__title {
+      text-align: center; }
+      .container__for__title span {
+        color: #561660; }
   .container__while {
     height: auto;
     width: 50vw;
@@ -39,5 +50,9 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    .container__while__title {
+      text-align: center; }
+      .container__while__title span {
+        color: #561660; }
 
 /*# sourceMappingURL=style.css.map */

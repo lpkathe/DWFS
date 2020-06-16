@@ -1,5 +1,6 @@
 :root {
     font-family: 'MuseoModerno', cursive;
+    font-size: 14px;
 }
 
 body {
@@ -7,12 +8,14 @@ body {
 }
 
 main {
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
 
 .header {
-    background-color: rgb(67, 97, 102);
+    color:  rgb(249, 238, 177);
+    background-color: rgb(238, 118, 72);
     text-align: center;
 }
 
@@ -21,17 +24,38 @@ main {
     padding: 2em;
     width: 100vw;
     display: flex;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: rgb(171, 36, 77);
 
         &__for {
             height: auto;
             width: 50vw;
             flex-direction: column;
-            border-radius: 1em solid rgb(67, 97, 102);
+            border-right: 0.1em solid  rgb(238, 118, 72);
+
+            &__title {
+                text-align: center;
+
+                & span {
+                    color: rgb(86, 22, 96);
+
+                }
+            }
         }
 
         &__while {
             height: auto;
             width: 50vw;
             flex-direction: column;
+
+            &__title {
+                text-align: center;
+
+                & span {
+                    color: rgb(86, 22, 96);
+
+                }
+            }
         }
 }
