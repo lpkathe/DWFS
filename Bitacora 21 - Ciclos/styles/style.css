@@ -1,0 +1,43 @@
+:root {
+  font-family: 'MuseoModerno', cursive; }
+
+body {
+  margin: 0; }
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.header {
+  background-color: #436166;
+  text-align: center; }
+
+.container {
+  margin: 0;
+  padding: 2em;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .container__for {
+    height: auto;
+    width: 50vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 1em solid #436166; }
+  .container__while {
+    height: auto;
+    width: 50vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+/*# sourceMappingURL=style.css.map */

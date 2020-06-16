@@ -1,3 +1,37 @@
+:root {
+    font-family: 'MuseoModerno', cursive;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
-    
+    background-color: rgb(67, 97, 102);
+    text-align: center;
+}
+
+.container {
+    margin: 0;
+    padding: 2em;
+    width: 100vw;
+    display: flex;
+
+        &__for {
+            height: auto;
+            width: 50vw;
+            flex-direction: column;
+            border-radius: 1em solid rgb(67, 97, 102);
+        }
+
+        &__while {
+            height: auto;
+            width: 50vw;
+            flex-direction: column;
+        }
 }
