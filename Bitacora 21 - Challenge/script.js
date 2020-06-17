@@ -13,3 +13,6 @@ while (contador <=5) {
 alert ("La suma de los números es: "+suma);
 
 
+var promedio = suma / 5;
+
+alert ("El promedio es: "+promedio);
