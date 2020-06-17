@@ -8,7 +8,7 @@ while (contador <=5) {
         suma += parseInt(numero);
         contador++;
     }
-}
+};
 
 alert ("La suma de los números es: "+suma);
 
