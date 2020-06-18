@@ -1,0 +1,21 @@
+:root {
+  font-family: 'Bellota', cursive;
+  font-size: medium; }
+
+.header {
+  background-color: aliceblue;
+  text-align: center;
+  font-size: 2em; }
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3 auto);
+  grid-template-areas: "sumemos" "promedio"; }
+  .section__title {
+    text-align: center;
+    color: brown; }
+  .section__sumemos {
+    grid-area: "sumemos"; }
+
+/*# sourceMappingURL=style.css.map */
