@@ -4,10 +4,11 @@
   color: #f9fffb; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #9dc4c2; }
 
 main {
-  background-color: #9dc4c2; }
+  padding: 2em; }
 
 .header {
   text-align: center;
