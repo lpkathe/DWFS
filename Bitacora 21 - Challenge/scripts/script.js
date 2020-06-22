@@ -1,11 +1,12 @@
-function sumemos() {
-    let suma = 0;
+let suma = 0;
+const numerosIngresados = 5;
+
+function sumar() {
     let contador = 1;
     let mensajeError = "";
-    const numeroVueltas = 5;
 
-    while (contador <= numeroVueltas) {
-        let numero = prompt("Ingrese un número " + contador + " de " + numeroVueltas + mensajeError)
+    while (contador <= numerosIngresados) {
+        let numero = prompt("Ingrese un número " + contador + " de " + numerosIngresados + mensajeError)
         
         if (numero == null) {
             alert ("Se ha cancelado el proceso, el resultado ha sido " + suma);
@@ -20,18 +21,22 @@ function sumemos() {
             mensajeError = "\n" + numero + " no es un número.";
         }
     }
-    console.log(contador);
 
-    if (contador >= numeroVueltas) {
+    if (contador >= numerosIngresados) {
         alert ("La suma de los números es: " + suma);
     }
 };
 
 function promedio() {
 
-    var promedio = suma / 5;
+    if (suma === 0) {
+        alert ("Se debe iniciar el proceso de suma ");
+        sumar();
+    }
 
-    alert ("El promedio es: "+promedio);
+    let promedio = suma / numerosIngresados;
+    alert ("El promedio es: " + promedio);
+
 };
 
 function edades() {
