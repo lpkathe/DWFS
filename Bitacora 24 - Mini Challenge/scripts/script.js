@@ -2,5 +2,10 @@ let mayor_menor = numero => numero == 0 ? "Es igual a '0'" : numero < 0 ? "Es me
 
 function calcular() {
     let number = document.getElementById("number").value;
-    document.getElementById("resultado").innerHTML = mayor_menor(number);
+
+    if (!isNaN(number) && number != "") {
+        document.getElementById("resultado").innerHTML = mayor_menor(number);
+    } else {
+        document.getElementById("resultado").innerHTML = number + " no es un número.";
+    }
 }
