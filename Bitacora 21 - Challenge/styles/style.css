@@ -1,13 +1,17 @@
 :root {
+  --gap: 2vmin;
+  --radio: calc(100vmin / 2.9);
+  --width: calc(var(--radio) * .866);
+  --height: var(--radio);
   font-family: 'Bellota', cursive;
-  font-size: medium;
-  color: #f9fffb; }
+  font-size: smaller;
+  color: white; }
 
 body {
   margin: 0;
-  background-color: #9dc4c2; }
+  background-color: black; }
 
-main {
+.layout {
   padding: 2em; }
 
 .header {
@@ -16,20 +20,100 @@ main {
   .header h1 {
     margin: 0; }
 
-.button {
-  border-radius: 1em solid #8C8984;
-  background-color: #0191C8; }
-
 .section {
+  margin: .5rem auto;
+  max-width: 100vmin;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3 auto);
-  grid-template-areas: "sumemos" "promedio"; }
+  grid-gap: 2vmin;
+  grid-template-columns: repeat(6, 1fr); }
+  .section article {
+    height: var(--height);
+    width: var(--width);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    -webkit-clip-path: url(#hexa-v);
+            clip-path: url(#hexa-v);
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-filter: drop-shadow(0 0 1px #fff);
+            filter: drop-shadow(0 0 1px #fff);
+    background-color: darkolivegreen; }
+    .section article:nth-of-type(-n+2) {
+      margin-bottom: calc(var(--height) * -.2); }
+    .section article:nth-of-type(n+6):nth-of-type(-n+7) {
+      margin-top: calc(var(--height) * -.2); }
+    .section article:nth-of-type(1) {
+      grid-column: 2 / span 2;
+      grid-row: 1; }
+    .section article:nth-of-type(2) {
+      grid-column: 4 / span 2;
+      grid-row: 1; }
+    .section article:nth-of-type(3) {
+      grid-column: 1 / span 2;
+      grid-row: 2; }
+    .section article:nth-of-type(4) {
+      grid-column: 3 / span 2;
+      grid-row: 2; }
+    .section article:nth-of-type(5) {
+      grid-column: 5 / span 2;
+      grid-row: 2; }
+    .section article:nth-of-type(6) {
+      grid-column: 2 / span 2;
+      grid-row: 3; }
+    .section article:nth-of-type(7) {
+      grid-column: 4 / span 2;
+      grid-row: 3; }
   .section__title {
-    font-weight: bolder;
+    margin: 0;
     text-align: center;
-    color: #8C8984; }
-  .section__suma {
-    grid-area: "sumemos"; }
+    color: #b89e6d; }
+  .section__ul {
+    padding-left: 0;
+    list-style-type: circle; }
+  .section__p {
+    margin: 0;
+    text-align: center;
+    color: #b89e6d; }
+  .section__button {
+    margin-top: 1em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 1em solid #8C8984;
+    color: #b89e6d;
+    background-color: #323f1b; }
+  .section__promedio p {
+    padding: 1em; }
+  .section__edades ul {
+    width: 10em; }
+  .section__edades button {
+    margin-top: .5em; }
+  .section__invitacion {
+    font-size: 2em; }
+  .section__promedio-condicional {
+    padding-top: 1.3em; }
+    .section__promedio-condicional ul {
+      padding-left: 1.5em; }
+  .section__pares-e-impares h2 {
+    margin-bottom: .2em; }
+  .section__pares-e-impares ul {
+    margin: 0;
+    padding-left: 1.8em; }
+  .section__pares-e-impares button {
+    margin-top: .4em; }
+  .section__numeros-a-letras ul {
+    padding-left: 1.3em; }
 
 /*# sourceMappingURL=style.css.map */
