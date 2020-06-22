@@ -1,11 +1,23 @@
 :root {
   font-family: 'Bellota', cursive;
-  font-size: medium; }
+  font-size: medium;
+  color: #f9fffb; }
+
+body {
+  margin: 0; }
+
+main {
+  background-color: #9dc4c2; }
 
 .header {
-  background-color: aliceblue;
   text-align: center;
   font-size: 2em; }
+  .header h1 {
+    margin: 0; }
+
+.button {
+  border-radius: 1em solid #8C8984;
+  background-color: #0191C8; }
 
 .section {
   display: grid;
@@ -13,8 +25,9 @@
   grid-template-rows: repeat(3 auto);
   grid-template-areas: "sumemos" "promedio"; }
   .section__title {
+    font-weight: bolder;
     text-align: center;
-    color: brown; }
+    color: #8C8984; }
   .section__sumemos {
     grid-area: "sumemos"; }
 

@@ -1,12 +1,29 @@
 :root {
     font-family: 'Bellota', cursive;
     font-size: medium;
+    color: rgb(249, 255, 251);
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background-color: rgb(157, 196, 194);
 }
 
 .header{
-    background-color: aliceblue;
     text-align: center;
     font-size: 2em;
+    
+    & h1 {
+        margin: 0;
+    }
+}
+
+.button {
+    border-radius: 1em solid #8C8984;
+    background-color: #0191C8;
 }
 
 .section {
@@ -16,8 +33,9 @@
     grid-template-areas: "sumemos" "promedio";
 
     &__title {
+        font-weight: bolder;
         text-align: center;
-        color: brown;
+        color: #8C8984;
     }
 
     &__sumemos {
