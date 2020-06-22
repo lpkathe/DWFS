@@ -1,24 +1,46 @@
 let suma = 0;
-let mensajeError = "";
 const numerosIngresados = 5;
+
+/**
+ * Esta funcion solicita al usuario un número y lo retorna, nulo de lo contrario.
+ * 
+ * @param {String} mensaje que se mostrará en el prompt
+ */
+function solicitarNumero(mensaje) {
+    let mensajeError = "";
+    let parar = false;
+
+    while(!parar) {
+        let numero = prompt(mensaje + mensajeError);
+
+        if (numero == null) {
+            alert ("Se ha cancelado el proceso");
+            break;
+        }
+        
+        numero = numero.trim();
+
+        if (!isNaN(numero) && numero != "") {
+            parar = true;
+            return parseInt(numero);
+        } else {
+            mensajeError = "\n'" + numero + "' no es un número";
+        }
+    }
+    return null;
+}
 
 function sumar() {
     let contador = 1;
 
     while (contador <= numerosIngresados) {
-        let numero = prompt("Ingrese un número " + contador + " de " + numerosIngresados + mensajeError)
-        
-        if (numero == null) {
-            alert ("Se ha cancelado el proceso, el resultado ha sido " + suma);
-            break;
-        } 
+        let numero = solicitarNumero("Ingrese un número " + contador + " de " + numerosIngresados)
 
-        if (!isNaN(numero) && numero != "" && (numero !== " ")) {
-            suma += parseInt(numero);
-            mensajeError = "";
-            contador++;
+        if (numero == null) {
+            break;
         } else {
-            mensajeError = "\n" + numero + " no es un número.";
+            suma += parseInt(numero);
+            contador++;
         }
     }
 
@@ -45,20 +67,14 @@ function edades() {
     let edad;
 
     while (edad != 0) {
-        edad = prompt("Ingrese la edad" + mensajeError)
+        edad = solicitarNumero("Ingrese la edad")
 
         if (edad == null) {
-            alert ("Se ha cancelado el proceso, el número de personas adultas es " + adultos);
             break;
-        } 
-
-        if (!isNaN(edad) && edad != "" && (edad !== " ")) {
+        } else {
             if (edad >= 18) {
                 adultos++;
             }
-            mensajeError = "";
-        } else {
-            mensajeError = "\n" + edad + " no es un número.";
         }
     };
 
@@ -66,3 +82,6 @@ function edades() {
         alert ("La cantidad de personas adultas son: " + adultos);
     }
 };
+
+function promedioCondicional() {
+}
