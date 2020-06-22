@@ -1,9 +1,9 @@
 let suma = 0;
+let mensajeError = "";
 const numerosIngresados = 5;
 
 function sumar() {
     let contador = 1;
-    let mensajeError = "";
 
     while (contador <= numerosIngresados) {
         let numero = prompt("Ingrese un número " + contador + " de " + numerosIngresados + mensajeError)
@@ -41,16 +41,28 @@ function promedio() {
 
 function edades() {
 
-    var adultos = 0
-    var edad = 1
+    let adultos = 0;
+    let edad;
 
     while (edad != 0) {
-        edad = prompt("Ingrese su edad")
+        edad = prompt("Ingrese la edad" + mensajeError)
 
-        if (edad >= 18) {
-            adultos++;
+        if (edad == null) {
+            alert ("Se ha cancelado el proceso, el número de personas adultas es " + adultos);
+            break;
+        } 
+
+        if (!isNaN(edad) && edad != "" && (edad !== " ")) {
+            if (edad >= 18) {
+                adultos++;
+            }
+            mensajeError = "";
+        } else {
+            mensajeError = "\n" + edad + " no es un número.";
         }
     };
 
-    alert ("La cantidad de personas adultas son: "+adultos);
+    if (edad == 0) {
+        alert ("La cantidad de personas adultas son: " + adultos);
+    }
 };
