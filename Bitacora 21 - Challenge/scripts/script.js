@@ -10,14 +10,14 @@ function solicitarNumero(mensaje) {
     let mensajeError = "";
     let parar = false;
 
-    while(!parar) {
+    while (!parar) {
         let numero = prompt(mensaje + mensajeError);
 
         if (numero == null) {
-            alert ("Se ha cancelado el proceso");
+            alert("Se ha cancelado el proceso");
             break;
         }
-        
+
         numero = numero.trim();
 
         if (!isNaN(numero) && numero != "") {
@@ -45,19 +45,19 @@ function sumar() {
     }
 
     if (contador >= numerosIngresados) {
-        alert ("La suma de los números es: " + suma);
+        alert("La suma de los números es: " + suma);
     }
 };
 
 function promedio() {
 
     if (suma === 0) {
-        alert ("Se debe iniciar el proceso de suma ");
+        alert("Se debe iniciar el proceso de suma ");
         sumar();
     }
 
     let promedio = suma / numerosIngresados;
-    alert ("El promedio es: " + promedio);
+    alert("El promedio es: " + promedio);
 
 };
 
@@ -79,9 +79,72 @@ function edades() {
     };
 
     if (edad == 0) {
-        alert ("La cantidad de personas adultas son: " + adultos);
+        alert("La cantidad de personas adultas son: " + adultos);
     }
 };
 
 function promedioCondicional() {
+
+    let parar = false;
+    let mensajeError = "";
+    let numerosUnDigito = [];
+
+    while (parar == false) {
+        let numero = prompt("Ingrese un número \n Para terminar escriba 'salir'." + mensajeError);
+
+        if (numero == null) {
+            alert("Se ha cancelado el proceso");
+            break;
+        }
+
+        numero = numero.trim();
+
+        if (!isNaN(numero) && numero != "") {
+            if (numero.length === 1) {
+                numerosUnDigito.push(numero);
+            }
+        } else {
+            mensajeError = "\n'" + numero + "' no es un número";
+        }
+
+        if (numero.trim().toLowerCase() == "salir") {
+            parar = true;
+            let suma = 0;
+            numerosUnDigito.forEach(element => suma += parseInt(element));
+            let promedio = suma / numerosUnDigito.length;
+
+            alert("El promedio de los números de 1 dígito que se ingresaron es: " + promedio);
+        }
+    }
+}
+
+function paresImpares() {
+
+    let par = 0;
+    let impar = 0;
+    let numero = 1;
+
+    while (numero != 0) {
+        numero = solicitarNumero("Ingrese un número");
+
+        if (numero == null || numero == 0) {
+            break;
+        }
+
+        if (0 == numero % 2) {
+            par++;
+        } else {
+            impar++;
+        }
+    }
+
+    if (par == impar) {
+        alert("Se ingreso igual número de pares e impares");
+    } else {
+        if (par < impar) {
+            alert("El mayor ingreso fue de números impares, equivalente a " + impar);
+        } else {
+            alert("El mayor ingreso fue de números pares, equivalente a " + par);
+        }
+    }
 }
