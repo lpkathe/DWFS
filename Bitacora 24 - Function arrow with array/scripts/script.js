@@ -1,14 +1,18 @@
 const average = numeros => {
-let suma = 0;
+
+    let suma = 0;
 
     numeros.forEach(element => {
-        
-        if (!isNaN(element)){
+        if (!isNaN(element)) {
             suma += element;
         }
     });
 
-    const promedio = suma / numeros.length;
-    return promedio;
+    if (numeros.length == 0) {
+        throw "'0' no puede ser divisor";
+    } else {
+        return suma / numeros.length;
+    }
 }
-console.log(average([1,2,3,4,5,"q","w","e"]));
+
+console.log(average([]));
