@@ -9,10 +9,10 @@ const average = numeros => {
     });
 
     if (numeros.length == 0) {
-        throw "'0' no puede ser divisor";
+        alert("'0' no puede ser divisor");
     } else {
         return suma / numeros.length;
     }
 }
 
-console.log(average([]));
+console.log(average([1,2,3,4,5,"p","r","a",9]));
