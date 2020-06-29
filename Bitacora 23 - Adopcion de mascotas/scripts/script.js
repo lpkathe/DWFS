@@ -12,6 +12,10 @@ class Perro {
         this.estado_adopcion = en_adopcion;
     }
 
+    getEstadoAdopcion() {
+        return this.estado_adopcion;
+    }
+
     infoEstadoAdopcion() {
         switch (this.estado_adopcion) {
             case en_adopcion:
@@ -45,13 +49,44 @@ const perro2 = new Perro("Dana", "pequinez", 1, "blanco", "ninguna");
 perro2.estadoAdopcion(en_proceso);
 console.log(perro2.infoEstadoAdopcion());
 
-/*const perro3 = new Perro(
+const perro3 = new Perro(
     prompt("Ingrese el nombre del perro"),
     prompt("Ingrese la raza del perro"),
     prompt("Ingrese la edad del perro"),
     prompt("Ingrese el color del perro"),
     prompt("Ingrese la discapacidad del perro (De lo contrario escriba ninguna)"),
 );
-console.log(perro3);*/
 
 const listaPerros = [perro1, perro2, perro3];
+
+function imprimir(id, texto, index) {
+    const getid = document.getElementById(id); /*Reconoce el elemento html utilizado*/
+    const li = document.createElement("li"); /*Crea otro elemento dentro del elemento contenedor*/
+    const textoLi = document.createTextNode((index + 1) + ". " + texto); /*Imprime algo dentro del elemento 'li' "*/
+    getid.appendChild(li);
+    li.appendChild(textoLi);
+}
+
+function listaTodosLosPerros() {
+    listaPerros.forEach(function (element, index) {
+        imprimir("listado1", element.nombre, index);
+    })
+}
+
+function listaPerrosEnAdopcion() {
+    listaPerros
+        .filter(element => element.getEstadoAdopcion() == en_adopcion)
+        .forEach((element, index) => imprimir("listado2", element.nombre, index));
+}
+
+function listaPerrosEnProceso() {
+    listaPerros
+        .filter(element => element.getEstadoAdopcion() == en_proceso)
+        .forEach((element, index) => imprimir("listado3", element.nombre, index));
+}
+
+function listaPerrosAdoptados() {
+    listaPerros
+        .filter(element => element.getEstadoAdopcion() == adoptado)
+        .forEach((element, index) => imprimir("listado4", element.nombre, index));
+}

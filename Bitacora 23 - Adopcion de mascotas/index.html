@@ -4,34 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Adopción de Mascotas</title>
 </head>
 
 <body>
     <main>
         <header>
-            <h1>¡Encuentra tu mascota ideal!</h1>
+            <h1 class="titulo">¡Encuentra tu mascota ideal!</h1>
         </header>
-        <section>
-            <article>
-                <h2>Perritos disponibles para adopción</h2>
-                <button onclick="">Buscan hogar</button>
+        <section class="container">
+            <article class="container__article">
+                <h2 class="subtitulo">Perritos disponibles para adopción</h2>
+                <picture class="container__article_image"><img src="https://picsum.photos/250/200" alt="Image"></picture>
+                <button class="container__article__button" onclick="listaPerrosEnAdopcion()">Buscan hogar</button>
+                <ol class="listado" id="listado2"></ol>
             </article>
-            <article>
-                <h2>¿Cómo va mi proceso de adopción?</h2>
-                <button onclick="">Estado del proceso</button>
+            <article class="container__article">
+                <h2  class="subtitulo">Perros en proceso de adopción</h2>
+                <picture class="container__article_image"><img src="https://picsum.photos/250/200" alt="Image"></picture>
+                <button class="container__article__button" onclick="listaPerrosEnProceso()">Casi con hogar</button>
+                <ol class="listado" id="listado3"></ol>
             </article>
-            <article>
-                <h2>Finales felices</h2>
-                <button onclick="">Conocelos aquí</button>
+            <article class="container__article">
+                <h2  class="subtitulo">Finales felices</h2>
+                <picture class="container__article_image"><img src="https://picsum.photos/250/200" alt="Image"></picture>
+                <button class="container__article__button" onclick="listaPerrosAdoptados()">Conócelos aquí</button>
+                <ol class="listado" id="listado4"></ol>
             </article>
-            <article>
-                <h2>Conoce a toda nuestra familia perruna</h2>
-                <button onclick="">TODOS LOS PERROS</button>
+            <article class="container__article">
+                <h2  class="subtitulo">Conoce a toda nuestra familia perruna</h2>
+                <picture class="container__article_image"><img src="https://picsum.photos/250/200" alt="Image"></picture>
+                <button class="container__article__button" onclick="listaTodosLosPerros()">TODOS LOS PERROS</button>
+                <ol class="listado" id="listado1"></ol>
             </article>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
