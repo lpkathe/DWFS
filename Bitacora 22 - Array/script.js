@@ -1,1 +1,0 @@
-const frutas = [Manzana, Pera, Mango, Piña, Fresa, Lulo, Mora, Kiwi, Maracuyá, Mandarina, Limón, Naranja];
