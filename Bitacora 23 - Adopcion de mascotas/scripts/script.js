@@ -60,10 +60,10 @@ const perro3 = new Perro(
 const listaPerros = [perro1, perro2, perro3];
 
 function imprimir(id, texto, index) {
-    const getid = document.getElementById(id); /*Reconoce el elemento html utilizado*/
+    const getId = document.getElementById(id); /*Reconoce el elemento html utilizado*/
     const li = document.createElement("li"); /*Crea otro elemento dentro del elemento contenedor*/
     const textoLi = document.createTextNode((index + 1) + ". " + texto); /*Imprime algo dentro del elemento 'li' "*/
-    getid.appendChild(li);
+    getId.appendChild(li);
     li.appendChild(textoLi);
 }
 
