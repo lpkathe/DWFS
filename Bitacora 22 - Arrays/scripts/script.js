@@ -8,13 +8,13 @@ function solicitarNumero(mensaje) {
 
     if (numero == null) {
         alert("Se ha cancelado el proceso");
+        return null;
     }
 
     return numero.trim();
 }
 
 function validacionNumero(texto) {
-
     if (!isNaN(texto) && texto != "") {
         return parseInt(texto);
     } else {
@@ -35,7 +35,7 @@ function imprimir(id, array) {
 function stop() {
     const listaStop = [];
     let numero = 0;
-    
+
     while (numero != "stop") {
         numero = solicitarNumero("Ingrese un número; para deterlo escriba 'stop'.");
         numero = validacionNumero(numero);
@@ -49,4 +49,43 @@ function stop() {
         }
     }
     imprimir("lista1", listaStop);
+}
+
+function dividirArrays() {
+    const listaPares = [];
+    const listaImpares = [];
+    const listaNoNumericos = [];
+
+    let texto = "1";
+
+    while (texto != 0) {
+        texto = solicitarNumero("Ingrese un número, para salir escriba '0'");
+        texto = validacionNumero(texto);
+
+        console.log(texto);
+        console.log(typeof (texto));
+
+        if (texto == 0) {
+            break;
+        }
+
+        /*if (texto == "" || texto == " " && texto != 0) {
+            texto = "1";
+            continue;
+        }*/
+
+        if ("number" == typeof (texto)) {
+            if (texto % 2 == 0 && texto != 0) {
+                listaPares.push(texto);
+            } else {
+                listaImpares.push(texto);
+            }
+        } else {
+            listaNoNumericos.push(texto);
+        }
+    }
+
+    imprimir("listaPares", listaPares);
+    imprimir("listaImpares", listaImpares);
+    imprimir("listaNoNumericos", listaNoNumericos);
 }
