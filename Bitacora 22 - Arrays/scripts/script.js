@@ -108,10 +108,44 @@ function eliminarExtremos() {
                 return a - b;
             });
             console.log(listaNumeros);
+        } else {
+            alert(numero + " no es un número.")
         }
     }
 
     listaNumeros.shift();
     listaNumeros.pop();
     imprimir("lista3", listaNumeros);
+}
+
+function dividirArrays2() {
+    const lista = [];
+    const lista1 = [];
+    const lista2 = [];
+    const lista3 = [];
+
+    let texto = "";
+
+    while (texto !== 0) {
+        texto = solicitarNumero("Ingrese cualquier CharacterData, para salir ingrese el número '0'");
+        texto = validacionNumero(texto);
+
+        if (texto !== 0) {
+            lista.push(texto);
+        }
+    }
+
+    lista.forEach((item, index) => {
+        if (index % 3 == 0) {
+            lista1.push(item);
+        } else if (index % 2 == 0) {
+            lista2.push(item);
+        } else {
+            lista3.push(item);
+        }
+    });
+
+    imprimir("listaIgual1", lista1);    
+    imprimir("listaIgual2", lista2);    
+    imprimir("listaIgual3", lista3);    
 }
