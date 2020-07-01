@@ -62,17 +62,17 @@ function dividirArrays() {
         texto = solicitarNumero("Ingrese un número, para salir escriba '0'");
         texto = validacionNumero(texto);
 
-        console.log(texto);
-        console.log(typeof (texto));
-
-        if (texto == 0) {
-            break;
-        }
+        /*console.log(texto);
+        console.log(typeof (texto));*/
 
         /*if (texto == "" || texto == " " && texto != 0) {
             texto = "1";
             continue;
         }*/
+
+        if (texto == 0) {
+            break;
+        }
 
         if ("number" == typeof (texto)) {
             if (texto % 2 == 0 && texto != 0) {
@@ -88,4 +88,30 @@ function dividirArrays() {
     imprimir("listaPares", listaPares);
     imprimir("listaImpares", listaImpares);
     imprimir("listaNoNumericos", listaNoNumericos);
+}
+
+function eliminarExtremos() {
+    const listaNumeros = [];
+    let numero = 1;
+
+    while (numero != 0) {
+        numero = solicitarNumero("Ingrese un número, para salir escriba '0'");
+        numero = validacionNumero(numero);
+
+        if (numero == 0) {
+            break;
+        }
+
+        if ("number" == typeof(numero)) {
+            listaNumeros.push(numero);
+            listaNumeros.sort(function(a, b){
+                return a - b;
+            });
+            console.log(listaNumeros);
+        }
+    }
+
+    listaNumeros.shift();
+    listaNumeros.pop();
+    imprimir("lista3", listaNumeros);
 }
