@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(244, 247, 38);
+}
+
+.container {
+    margin: 2em 2em;
+    display: flex;
+    flex-direction: column;
+
+    &__section {
+        flex-flow: column wrap;
+        align-items: stretch;
+    }
+    
+}
+
+.header {
+    color: rgb(5, 58, 231);
+    text-align: center;
+    text-decoration: overline;
+}
+
+.article {
+    padding: 1.5em;
+    width: 40vw;
+    display: inline-block;
+
+    &__button {
+        padding: 0.3em;
+        font-weight: bold;
+    }
+}
+
+.subtitulo {
+    text-align: right;
+}
