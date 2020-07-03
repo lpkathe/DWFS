@@ -6,7 +6,7 @@
 function solicitarNumero(mensaje) {
     let numero = prompt(mensaje);
 
-    if (numero == null) {
+    if (numero === null) {
         alert("Se ha cancelado el proceso");
         return null;
     }
@@ -15,7 +15,7 @@ function solicitarNumero(mensaje) {
 }
 
 function validacionNumero(texto) {
-    if (!isNaN(texto) && texto != "") {
+    if (!isNaN(texto) && texto !== "") {
         return parseInt(texto);
     } else {
         return texto;
@@ -36,13 +36,13 @@ function stop() {
     const listaStop = [];
     let numero = 0;
 
-    while (numero != "stop") {
+    while (numero !== "stop") {
         numero = solicitarNumero("Ingrese un número; para deterlo escriba 'stop'.");
         numero = validacionNumero(numero);
 
-        if ("number" == typeof (numero)) {
+        if ("number" === typeof (numero)) {
             listaStop.push(numero);
-        } else if (numero.toLowerCase() == "stop") {
+        } else if (numero.toLowerCase() === "stop") {
             break;
         } else {
             alert(numero + " no es un caracter valido.");
@@ -58,24 +58,24 @@ function dividirArrays() {
 
     let texto = "1";
 
-    while (texto != 0) {
+    while (texto !== 0) {
         texto = solicitarNumero("Ingrese un número, para salir escriba '0'");
         texto = validacionNumero(texto);
 
         /*console.log(texto);
         console.log(typeof (texto));*/
 
-        /*if (texto == "" || texto == " " && texto != 0) {
+        /*if (texto === "" || texto === " " && texto !== 0) {
             texto = "1";
             continue;
         }*/
 
-        if (texto == 0) {
+        if (texto === 0) {
             break;
         }
 
-        if ("number" == typeof (texto)) {
-            if (texto % 2 == 0 && texto != 0) {
+        if ("number" === typeof (texto)) {
+            if (texto % 2 === 0 && texto !== 0) {
                 listaPares.push(texto);
             } else {
                 listaImpares.push(texto);
@@ -94,15 +94,15 @@ function eliminarExtremos() {
     const listaNumeros = [];
     let numero = 1;
 
-    while (numero != 0) {
+    while (numero !== 0) {
         numero = solicitarNumero("Ingrese un número, para salir escriba '0'");
         numero = validacionNumero(numero);
 
-        if (numero == 0) {
+        if (numero === 0) {
             break;
         }
 
-        if ("number" == typeof(numero)) {
+        if ("number" === typeof(numero)) {
             listaNumeros.push(numero);
             listaNumeros.sort(function(a, b){
                 return a - b;
@@ -136,9 +136,9 @@ function dividirArrays2() {
     }
 
     lista.forEach((item, index) => {
-        if (index % 3 == 0) {
+        if (index % 3 === 0) {
             lista1.push(item);
-        } else if (index % 2 == 0) {
+        } else if (index % 2 === 0) {
             lista2.push(item);
         } else {
             lista3.push(item);
