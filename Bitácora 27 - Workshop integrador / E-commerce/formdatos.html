@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Formulario Datos Personales</title>
+</head>
+
+<body>
+    <main class="container">
+        <form action="">
+            <div class="div">
+                <label class="label" for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+
+                <label class="label" for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+
+                <label class="label" for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="ejemplo@mail.com" required>
+
+                <label class="label" for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" placeholder="(xxx) xxx-xxx-xxx" id="telefono">
+            </div>
+            <div class="div">
+                <label for="metodoDepAGO">Método de pago</label>
+                <select name="metodoDepAGO" id="metodoDepAGO" size="1" required>
+                    <option value="" disabled selected>Seleccionar...</option>
+                    <option value=PSE>PSE</option>
+                    <option value=tarjetaDeCredito>Tarjeta de crédito</option>
+                </select>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

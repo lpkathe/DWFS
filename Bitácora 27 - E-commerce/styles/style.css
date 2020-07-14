@@ -1,0 +1,38 @@
+:root {
+  font-family: 'Bangers', cursive;
+  font-size: 16px; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header {
+  margin: 1em 0;
+  padding: 0.3em;
+  width: 100vw;
+  color: white;
+  background-color: black; }
+  .header__title {
+    margin: 0.2em;
+    text-align: center;
+    font-family: 'Yellowtail', cursive; }
+  .header__navbar {
+    padding: 0.15em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.6em; }
+    .header__navbar__option {
+      margin: 0.1em; }
+    .header__navbar__icon {
+      height: 1em;
+      width: 1em;
+      background-color: white; }
+
+/*# sourceMappingURL=style.css.map */
