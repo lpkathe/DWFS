@@ -19,7 +19,7 @@ const api = {
         .then((response) => resolve(response.json()))
         .catch((error) => reject(error))
       });
-    })
+    }),
   };
   
   export default api;

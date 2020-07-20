@@ -21,7 +21,7 @@ let allPokemons = '';
 const getPokemons = (() => {
   allPokemons = '';
   const { pokemonsData, pokemonDetail } = api;
-
+  
   // PROMISE ALL
   /* Promise.all([
     pokemonDetail(URL, 1),
@@ -33,22 +33,22 @@ const getPokemons = (() => {
   }).catch((error) => {
     renderMsg(error);
   }); */
-
+  
   // CHAIN PROMISES
   /* return pokemonDetail(URL, 1)
   .then((response) => {
     console.log(response);
     return pokemonDetail(URL, 2);
-   })
-   .then((response) => {
-     console.log(response);
-     return pokemonDetail(URL, 3);
-   })
-   .then((response) => {
-     console.log(response);
-     return console.log("FINISH");
-   }) */
-
+  })
+  .then((response) => {
+    console.log(response);
+    return pokemonDetail(URL, 3);
+  })
+  .then((response) => {
+    console.log(response);
+    return console.log("FINISH");
+  }) */
+  
   pokemonsData(URL, inputElement.value)
   .then((response) => {
     getPokemonDetail(response.results);
@@ -75,7 +75,7 @@ const getPokemonDetail = ((pokemons) => {
       renderMsg(error);
     })
   });
-
+  
   // PROMISE RACE
   /* Promise.race(allPromises).then((response) => {
     divElementContainerCards.innerHTML = allCardsMarkup(response);
@@ -103,22 +103,44 @@ const allCardsMarkup = ((pokemon) => {
 const cardMarkup = ((img, order, pokemonName, weight) => {
   return (
     `<div class="pokedex-container-card">
-      <img src=${img} alt="pokemón"/>
-      <p>Order: ${order}</p>
-      <p>Nombre: ${pokemonName}</p>
-      <p>Peso: ${weight}</p>
+    <img src=${img} alt="pokemón"/>
+    <p>Order: ${order}</p>
+    <p>Nombre: ${pokemonName}</p>
+    <p>Peso: ${weight}</p>
     </div>`
-  );
-});
+    );
+  });
+  
+  /**
+   * @method renderMsg
+   * @description Render message on the DOM
+   * @returns {String}
+   */
+  const renderMsg = ((msg) => document.querySelector('.pokedex-msg').innerHTML = msg );
+  
+  /**
+   * Listeners
+   */
+  btnElement.addEventListener('click', getPokemons);
+  
 
-/**
- * @method renderMsg
- * @description Render message on the DOM
- * @returns {String}
- */
-const renderMsg = ((msg) => document.querySelector('.pokedex-msg').innerHTML = msg );
+  /**
+   * OBJETIVO 1
+   */
 
-/**
- * Listeners
- */
-btnElement.addEventListener('click', getPokemons);
+  const btnObjetivo1 = document.getElementById('objetivo1');
+  const objetivo1 = (() => {
+    allPokemons = '';
+    const { pokemonsData, pokemonDetail } = api;
+    pokemonsData(URL, 10)
+    .then((response) => {
+      const random = response.results.sort(() => Math.random()-0.5);
+      const hola = getPokemonDetail(random.slice(0,3));
+      console.log(random);
+      console.log(hola);
+    }).catch((error) => {
+      renderMsg(error);
+    });
+  });
+  
+  btnObjetivo1.addEventListener('click', objetivo1());
