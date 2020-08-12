@@ -18,3 +18,17 @@
     + Busca el pokemon del ID del primer input recién cuando finalice busca el segundo. Haz lo mismo con el tercero.
     + Lanza cada una de las llamadas cuando estés seguro/a que la anterior finalizó. 
 
+### Bitácora 39 - Introducción al NodeJS
+
+**Objetivos:**
+
+1. Corroborar el funcionamiento de NodeJS.
+    + Crea un archivo index.js.
+    + Escribe un console.log(“Hola mundo”);
+    + Ejecuta el index.js con Node.
+2. Hacer ejemplo que incluya variables y comparar los resultados de la consola del Chrome y Node JS.
+    + Elige la variable.
+    + Asígnale un valor inicial de 10.
+    + Imprime los resultados a través del console.log.
+    + Añade 5 a tu variable.
+    + Imprime nuevamente tu variable con un console.log.
