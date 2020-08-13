@@ -20,7 +20,7 @@
 
 ### Bitácora 39 - Introducción al NodeJS
 
-**Objetivos:**
+**Challenge:**
 
 1. Corroborar el funcionamiento de NodeJS.
     + Crea un archivo index.js.
@@ -32,3 +32,16 @@
     + Imprime los resultados a través del console.log.
     + Añade 5 a tu variable.
     + Imprime nuevamente tu variable con un console.log.
+
+**Programamos:**
+ 
+1. Crear un archivo con extensión js.
+2. Declara un array con hobbies favoritos.
+3. Muestra cada uno de los hobbies utilizando foreach para mostrar cada elemento.
+
+**Programo:**
+
+1. Crea un script que utilice la librería de File System con las siguientes funcionalidades:
+    + Crea un archivo de texto.
+    + Inserte un texto placeholder.
+    + Guarde el archivo.
