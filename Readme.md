@@ -45,3 +45,15 @@
     + Crea un archivo de texto.
     + Inserte un texto placeholder.
     + Guarde el archivo.
+2. Cree un archivo app.js que importe un módulo llamado calculator.js.
+El módulo debe tener la posibilidad de:
+    + Sumar
+    + Restar
+    + Multiplicar
+    + Dividir
+Realizar cualquier operación desde app.js.
+3. Guarde cada ejecución del módulo en un archivo log.txt.
+Ejemplo de log.txt: 
+    + 7 x 4 = 28
+    + 10 - 4 = 6
+    + 15 / 3 = 5
