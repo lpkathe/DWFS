@@ -1,5 +1,13 @@
+const fs = require('fs');
+
 function sumar(a,b){
     let suma = a+b;
+    //fs.writeFileSync("log.txt", a" + "b" = "suma/n, {flag: "a+"});
+    /*fs.writeFileSync("log.txt", a, [{flag: "a+"}]);
+    fs.writeFileSync("log.txt", " + ", {flag: "a+"});
+    fs.writeFileSync("log.txt", b, {flag: "a+"});
+    fs.writeFileSync("log.txt", " = ", {flag: "a+"});
+    fs.writeFileSync("log.txt", suma/n, {flag: "a+"});*/
     return suma
 }
 function restar(a,b){
