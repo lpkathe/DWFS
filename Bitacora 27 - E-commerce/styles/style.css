@@ -3,8 +3,6 @@
   font-size: 16px; }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
 
 .header {
@@ -19,14 +17,9 @@
     font-family: 'Yellowtail', cursive; }
   .header__navbar {
     padding: 0.15em;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
     font-size: 0.6em; }
     .header__navbar__option {
       margin: 0.1em; }

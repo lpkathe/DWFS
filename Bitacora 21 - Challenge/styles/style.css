@@ -29,26 +29,14 @@ body {
   .section article {
     height: var(--height);
     width: var(--width);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    -webkit-clip-path: url(#hexa-v);
-            clip-path: url(#hexa-v);
-    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    -webkit-filter: drop-shadow(0 0 1px #fff);
-            filter: drop-shadow(0 0 1px #fff);
+    clip-path: url(#hexa-v);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    filter: drop-shadow(0 0 1px #fff);
     background-color: darkolivegreen; }
     .section article:nth-of-type(-n+2) {
       margin-bottom: calc(var(--height) * -.2); }
@@ -88,8 +76,6 @@ body {
     color: #b89e6d; }
   .section__button {
     margin-top: 1em;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     border-radius: 1em solid #8C8984;
     color: #b89e6d;

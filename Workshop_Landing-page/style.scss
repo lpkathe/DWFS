@@ -26,13 +26,19 @@ body {
     font-weight: bold;
     color: whitesmoke;
   }
+
+  &_a {
+    background-color: transparent;
+  }
     
-  &_logo {
-    margin: 0 2em;
-    width: 3em;
+  &_register {
+    margin: 0 4em;
+    width: 7em;
     height: 3em;
-    border-radius: 50px;
-    background-color: white;
+    border: 1px solid white;
+    border-radius: 85px;
+    color: white;
+    background-color: transparent;
   }
 }
 
