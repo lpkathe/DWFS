@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style-hamburguer.css">
+  <link rel="stylesheet" href="style.css">
+  <title>DIARIO TECNOLOGICO</title>
+</head>
+
+<body>
+  <main class="container">
+    <input type="checkbox" id="hamburguesa" class="hamburguesa">
+
+    <header class="header">
+      <label class="nav-icon" for="hamburguesa">
+        <div></div>
+      </label>
+
+      <h1 class="header_title">Technology Diary</h1>
+
+      <picture class="header_logo">
+        <img src="https://narbon.com/wp-content/uploads/narbon.svg" alt="logo"></img>
+      </picture>
+
+    </header>
+
+    <nav class="container_nav">
+      <ul class="container_nav_ul">
+        <li><a href="#notice1">An Introduction To React With Ionic</a></li>
+        <li><a href="#notice2">Readability Algorithms Should Be Tools, Not Targets</a></li>
+        <li><a href="#notice3">Workshops On CSS, Accessibility, Performance, And UX</a></li>
+        <li><a href="#notice4">Mirage JS Deep Dive: Understanding Mirage JS Models</a></li>
+      </ul>
+    </nav>
+
+    <section class="articles">
+      <article id="notice1" class="article">
+        <picture>
+          <img src="https://picsum.photos/150/150" alt="" class="article_img">
+        </picture>
+        <div class="column">
+          <h2 class="article_title">An Introduction To React With Ionic</h2>
+          <input type="checkbox" class="read_more" id="article_1">
+          <p class="article_wrap">Mobile app development using hybrid frameworks has come a long way since initial
+            release in 2008. With the improvements being made to the JavaScript engine and improved processing power
+            available to mobile phones,
+            the major concern people had when they considered developing their apps using the hybrid approach — namely,
+            <span class="article_target">
+              performance — has all but been eliminated, and cross-platform frameworks have seen a surge in popularity.
+              We're going to build a mobile application that pulls data from the Marvel Comics API; the data will show
+              Marvel comics and you'll be able to choose your favorites. At the end, we'll create a native build of the
+              project on Android.
+            </span>
+          </p>
+          <label for="article_1" class="article_trigger"></label>
+        </div>
+      </article>
+      <article id="notice2" class="article">
+        <picture>
+          <img src="https://picsum.photos/150/150" alt="" class="article_img">
+        </picture>
+        <div class="column">
+          <h2 class="article_title">Readability Algorithms Should Be Tools, Not Targets</h2>
+          <input type="checkbox" class="read_more" id="article_2">
+          <p class="article_wrap">Readability programs may seem like a godsend, but the worst thing writers can do is
+            write to please them
+            above all others. Finding your voice is hard enough without also trying to sound like everyone else.
+            <span class="article_target">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellendus similique repudiandae ex nemo placeat maiores tempora, nulla consequuntur! Quos, rerum iste necessitatibus inventore voluptatibus molestias quas sunt? Iusto, voluptatum.
+              Quaerat sunt quas, officiis labore necessitatibus natus eum nisi sequi, magni voluptas sit, quasi ea molestias odit inventore? Beatae vitae mollitia, quidem quo maiores quaerat quae repellat cumque velit sequi?
+              Iste ut asperiores enim nobis culpa nulla quaerat! Nisi earum at quasi quas harum nihil ut totam, perferendis perspiciatis accusamus repellat libero iste eligendi consequuntur? Et necessitatibus architecto fugit quod!             
+            </span>
+          </p>
+          <label for="article_2" class="article_trigger"></label>
+        </div>
+      </article>
+      <article id="notice3" class="article">
+        <picture>
+          <img src="https://picsum.photos/150/150" alt="" class="article_img">
+        </picture>
+        <div class="column">
+          <h2 class="article_title">Join Our New Online Workshops On CSS, Accessibility, Performance, And UX</h2>
+          <input type="checkbox" class="read_more" id="article_3">
+          <p class="article_wrap">Our initial online workshops went so well, we have scheduled many more. Find out how
+            what we learned from
+            those first workshops and what we have coming up over the next two months.
+            <span class="article_target">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellendus similique repudiandae ex nemo placeat maiores tempora, nulla consequuntur! Quos, rerum iste necessitatibus inventore voluptatibus molestias quas sunt? Iusto, voluptatum.
+              Quaerat sunt quas, officiis labore necessitatibus natus eum nisi sequi, magni voluptas sit, quasi ea molestias odit inventore? Beatae vitae mollitia, quidem quo maiores quaerat quae repellat cumque velit sequi?
+              Iste ut asperiores enim nobis culpa nulla quaerat! Nisi earum at quasi quas harum nihil ut totam, perferendis perspiciatis accusamus repellat libero iste eligendi consequuntur? Et necessitatibus architecto fugit quod!
+            </span>
+          </p>
+          <label for="article_3" class="article_trigger"></label>
+        </div>
+      </article>
+      <article id="notice4" class="article">
+        <picture>
+          <img src="https://picsum.photos/150/150" alt="" class="article_img">
+        </picture>
+        <div class="column">
+          <h2 class="article_title">Mirage JS Deep Dive: Understanding Mirage JS Models And Associations (Part 1)</h2>
+          <input type="checkbox" class="read_more" id="article_4">
+          <p class="article_wrap">In this first part of the Mirage JS Deep Dive series, we will be looking at Mirage
+            JS models and
+            associations. We'll take a closer look at what they are and the roles they play in crafting out
+            production-ready frontend without an actual backend with Mirage JS.
+            <span class="article_target">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellendus similique repudiandae ex nemo placeat maiores tempora, nulla consequuntur! Quos, rerum iste necessitatibus inventore voluptatibus molestias quas sunt? Iusto, voluptatum.
+              Quaerat sunt quas, officiis labore necessitatibus natus eum nisi sequi, magni voluptas sit, quasi ea molestias odit inventore? Beatae vitae mollitia, quidem quo maiores quaerat quae repellat cumque velit sequi?
+              Iste ut asperiores enim nobis culpa nulla quaerat! Nisi earum at quasi quas harum nihil ut totam, perferendis perspiciatis accusamus repellat libero iste eligendi consequuntur? Et necessitatibus architecto fugit quod!
+            </span>
+          </p>
+          <label for="article_4" class="article_trigger"></label>
+        </div>
+      </article>
+    </section>
+
+    <aside id="aside_comments" class="aside">
+      <picture>
+        <img src="https://image.flaticon.com/icons/svg/2811/2811088.svg">
+        <article class="article1">
+          <h3>Diana Valencia:</h3>
+          <p>In light mode, all font colors are black and background is white. But what if some section of page has
+            font color white and background color (or some other color scheme ) is black in light mode . And this is
+            defined in css file. Then how can I do this?.</p>
+          <p>04-May-2020</p>
+        </article>
+        <article class="article2">
+          <h3>Isacc Salazar</h3>
+          <p>If you're comparing this to svelte, I think you missed a lot of the point:
+            <li>no build step</li>
+            <li>minimal</li>
+            <br>
+            Svelte's whole point of of existence, stripping everything that does not provide any value at build time,
+            would necessarily require a build step.
+          </p>
+          <p>05-May-2020</p>
+        </article>
+        <article class="article3">
+          <h3>Katherine Martinez</h3>
+          <p>In light mode, all font colors are black and background is white. But what if some section of page has
+            font color white and background color (or some other color scheme ) is black in light mode . And this is
+            defined in css file. Then how can I do this?</p>
+          <p>06-May-2020</p>
+        </article>
+    </aside>
+  </main>
+  <div class="div_buscar">
+    <section id="section_buscar" class="section_buscar">
+    <form method="get" action="https://www.google.com/search" target="_blank">
+      <span class="icon"><i class="fa fa-search"></i></span>
+      <input type="search" id="buscar" name="q" placeholder="Escribe aquí para buscar" title="Escriba su búsqueda y presione enter" autofocus required>  
+  </form>
+  </section>
+  </div>
+  <footer class="footer">&copy; ACAMICA 2020</footer>
+</body>
