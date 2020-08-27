@@ -19,6 +19,7 @@ body {
   height: 4em;
   width: 100vw;
   position: fixed;
+  z-index: 10;
   padding: 0em 1em;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -29,16 +30,25 @@ body {
   .header_title {
     font-weight: bold;
     color: whitesmoke; }
-  .header_a {
-    background-color: transparent; }
-  .header_register {
-    margin: 0 4em;
+  .header_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0; }
+  .header_button {
+    margin: 0 2em;
     width: 7em;
     height: 3em;
     border: 1px solid white;
-    border-radius: 85px;
+    border-radius: 55px;
     color: white;
-    background-color: transparent; }
+    background-color: transparent;
+    text-align: center; }
+    .header_button_a {
+      margin: 0;
+      padding: 0;
+      background-color: transparent; }
 
 .container_nav {
   font-weight: bold;
@@ -143,10 +153,12 @@ aside {
   border-left: 0;
   background: #CFE2FB; }
   aside picture img {
-    padding-top: 1em;
+    padding-top: 5em;
     width: 40%;
     -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg); }
+            transform: rotate(-45deg);
+    position: relative;
+    z-index: 2; }
   aside article {
     margin: 1em;
     padding: 0.3em;
